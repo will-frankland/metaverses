@@ -17,27 +17,26 @@ const WhatsNew = () => (
     className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}>
       
       <motion.div
-      variants={fadeIn('left', 'tween', 0.2, 1)}
+      variants={fadeIn('right', 'tween', 0.2, 1)}
       className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Get started with just a few clicks</>}/>
-        {/* <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-          {startingFeatures.map((feature, index) => (
-            <StartSteps 
-              key={feature}
-              number={index + 1}
-              text={feature}
+        <TypingText title="| What's New?" />
+        <TitleText title={<>What's new about Metaversus?</>}/>
+        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+          {newFeatures.map((feature) => (
+            <NewFeatures 
+              key={feature.title}
+              {...feature}
               />
           ))}
-        </div> */}
+        </div>
       </motion.div>
       <motion.div
       variants={planetVariants('right')}
       className={`flex-1 ${styles.flexCenter}`}>
         <img
-        src="/get-started.png"
-        alt="get-started"
+        src="/whats-new.png"
+        alt="whats-new"
         className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
