@@ -34,6 +34,13 @@ const World = () => (
           alt="map"
           className="w-full h-full object-cover"
         />
+        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+          <img
+            src="people-01.png"
+            alt="people"
+            className="w-full h-full"
+          />
+        </div>
       </motion.div>
     </motion.div>
   </section>
